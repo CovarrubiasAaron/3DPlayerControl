@@ -14,6 +14,6 @@ public class PlayerControler : MonoBehaviour
     void Update()
     {
         // We'll move the vechile forword 
-        transform.Translate(Vector3.forward);
+        transform.Translate(Vector3.forward * Time.deltaTime * 20);
     }
 }
